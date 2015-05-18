@@ -103,7 +103,7 @@ void loop() {
     Serial.print(hi);
     Serial.println(" *F");
     
-    //TEST
+    //Pass values to Arduino Bridge
     Bridge.put("temperature", String(t));
     Bridge.put("humidity", String(h));
     Bridge.put("heatIndex", String(hi));
