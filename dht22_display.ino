@@ -106,7 +106,7 @@ void loop() {
     //Pass values to Arduino Bridge
     Bridge.put("temperature", String(t));
     Bridge.put("humidity", String(h));
-    Bridge.put("heatIndex", String(hi));
+    Bridge.put("heatIndex", String(dht.convertFtoC(hi)));
   }
   
 }
